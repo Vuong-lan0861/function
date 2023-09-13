@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+</head>
+
+<body>
+    <script>
+        let banKinh = +prompt("Nhập bán kính:");
+        let dienTich = tinhDienTichHinhTron(banKinh);
+        let chuVi = tinhChuViHinhTron(banKinh);
+
+        // Hàm tính diện tích hình tròn
+        function tinhDienTichHinhTron(banKinh) {
+            var dienTich = Math.PI * Math.pow(banKinh, 2);
+            return dienTich;
+        }
+
+
+        // Hàm tính chu vi hình tròn
+        function tinhChuViHinhTron(banKinh) {
+            var chuVi = 2 * Math.PI * banKinh;
+            return chuVi;
+        }
+
+
+        document.write("Diện tích hình tròn có bán kính " + banKinh + " là: " + dienTich + "<br>");
+        document.write("Chu vi hình tròn có bán kính " + banKinh + " là: " + chuVi + "<br>");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai3</title>
+</head>
+
+<body>
+    <script>
+        let number = +prompt("Nhập số:");
+        let giaiThua = tinhGiaiThua(number);
+        // Hàm tính giai thừa của một số
+        function tinhGiaiThua(number) {
+            if (number === 0 || number === 1) {
+                return 1;
+            } else {
+                return number * tinhGiaiThua(number - 1);
+            }
+        }
+        document.write("Giai thừa của " + number + " là: " + giaiThua);
+    </script>
+</body>
+
+</html>

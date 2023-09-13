@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai4</title>
+</head>
+
+<body>
+    <script>
+        let kyTu = prompt("Nhập một ký tự:");
+        let result = kiemTraKyTuLaSo(kyTu);
+
+        // Hàm kiểm tra xem ký tự là số hay không
+        function kiemTraKyTuLaSo(kyTu) {
+            var pattern = /^[0-9]$/;
+            return pattern.test(kyTu);
+        }
+        document.write("Ký tự " + kyTu + " là số: " + result);
+    </script>
+</body>
+
+</html>
