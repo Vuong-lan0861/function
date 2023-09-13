@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai6</title>
+</head>
+
+<body>
+    <script>
+        let number = +prompt("Nhập một số:");
+        let result = laSoNguyenDuong(number);
+        // Hàm kiểm tra xem số có phải là số nguyên dương hay không
+        function laSoNguyenDuong(number) {
+            if (typeof number === 'number' && number > 0 && Number.isInteger(number)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        document.write(number + " là: " + result);
+    </script>
+</body>
+
+</html>
