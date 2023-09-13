@@ -15,8 +15,8 @@
 
         // Hàm nhập danh sách số nguyên từ người dùng và trả về số nhỏ nhất
         function timSoNhoNhat() {
-            for (var i = 0; i < number; i++) {
-                var soNhap = +prompt("Nhập số nguyên thứ " + (i + 1) + ":");
+            for (let i = 0; i < number; i++) {
+                let soNhap = +prompt("Nhập số nguyên thứ " + (i + 1) + ":");
                 if (!isNaN(soNhap)) {
                     danhSachSo.push(soNhap);
                 } else {
@@ -28,9 +28,9 @@
                 return "Danh sách trống.";
             }
 
-            var soNhoNhat = danhSachSo[0];
+            let soNhoNhat = danhSachSo[0];
 
-            for (var j = 1; j < danhSachSo.length; j++) {
+            for (let j = 1; j < danhSachSo.length; j++) {
                 if (danhSachSo[j] < soNhoNhat) {
                     soNhoNhat = danhSachSo[j];
                 }

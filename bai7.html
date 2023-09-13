@@ -11,16 +11,17 @@
     <script>
         let numberOne = +prompt("Nhập số nguyên thứ nhất:");
         let numberTwo = +prompt("Nhập số nguyên thứ hai:");
+        let result = hoanDoi(numberOne, numberTwo);
 
         // Hàm hoán đổi chỗ hai số nguyên
         function hoanDoi(a, b) {
-            var number = a;
+            let number = a;
             a = b;
             b = number;
             return [a, b];
         }
-        var result = hoanDoi(numberOne, numberTwo);
-        document.write("Sau khi hoán đổi chỗ, số thứ nhất là " + result[0] +"<br>"+ " và số thứ hai là " + result[1]);
+
+        document.write("Sau khi hoán đổi chỗ, số thứ nhất là " + result[0] + "<br>" + " và số thứ hai là " + result[1]);
 
 
     </script>
